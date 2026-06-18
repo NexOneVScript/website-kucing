@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <style>
+      button{
+        background: #3a3a3a;
+        color: white;
+        border: none;
+        padding: 15px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+        
+        position: relative;
+        z-index: 2;
+      }
+      
+      body{
+        font-family: Arial;
+      }
+      
+      .navbar{
+        background: #2c2c2c;
+        padding:15px;
+      }
+      
+      .navbar a{
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+      }
+      
+      .container{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      .card{
+        background: #2c2c2c;
+        width: 250px;
+        padding: 20px;
+        border-radius: 15px;
+        margin-top: 20px;
+        
+        margin-left: auto;
+        margin-right: auto;
+        
+        box-shadow:0 5px 20px rgba(0,0,0,0.4);
+        transition: 0.3s;
+      }
+      
+      .card img{
+        width: 100%;
+        border-radius: 10px;
+      }
+      
+      .card p{
+        color: #ccc;
+      }
+      
+      .card:hover{
+        transform: scale(1.05);
+      }
+      
+body{
+    background:#181818;
+    font-family: Arial;
+    color: white;
+}
+
+.neon-btn{
+  background: #2c2c2c;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.neon-btn{
+  background: #2c2c2c;
+  color: white;
+  border: 2px solid #a855f7;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  position: relative;
+  transition: 0.3s;
+}
+
+  .neon-btn:hover{
+  box-shadow:
+    0 0 8px #a855f7,
+    0 0 16px #a855f7,
+    0 0 30px #a855f7;
+}
+
+  button:hover{
+    background: #444;
+    color: white;
+    
+    box-shadow:
+    0 0 10px #a855f7,
+    0 0 20px #a855f7,
+    0 0 40px #a855f7;
+    
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse{
+    0%{
+      box-shadow:
+      0 0 10px #a855f7,
+      0 0 20px #a855f7;
+    }
+    
+    50%{
+      box-shadow:
+      0 0 20px #a855f7,
+      0 0 40px #a855f7,
+      0 0 70px #a855f7;
+    }
+    
+    100%{
+      box-shadow:
+      0 0 10px #a855f7,
+      0 0 20px #a855f7;
+    }
+  }
+  
+  .hero{
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .hero h1{
+    font-size: 32px;
+  }
+  
+  .hero p{
+    color: #ccc;
+  }
+  
+  @media (max-width: 600px){
+    .container{
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .card{
+      width: 90%;
+    }
+  }
+  
+  footer{
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+    margin-top: 40px;
+  }
+  
+  .hero{
+    text-align: center;
+  }
+      
+    </style>
+    
+  </head>
+  <body>
+    
+    <img src="FotoUtama.jpg" width="685" height="220">
+    
+     <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="kontak.html">Kontak</a>
+    </div>
+    
+    <footer>
+      <p>© 2026 Website Kucing - Dibuat oleh Galang</p>
+    </footer>
+    
+    <div class="hero">
+      <h1>Apa itu Kucing?</h1>
+      <p>Pengamatan ini dilakukan untuk mempelajari perilaku, kebiasaan, dan karakteristik kucing dalam kehidupan sehari-hari. Kucing merupakan hewan peliharaan yang memiliki sifat unik, seperti aktif bermain, suka membersihkan diri, dan memiliki insting berburu yang kuat.
+      </p>
+      <p>
+        Melalui pengamatan ini, kita dapat memahami bagaimana cara kucing berinteraksi dengan lingkungan, manusia, serta hewan lainnya. Selain itu, kita juga belajar tentang cara merawat kucing dengan baik, mulai dari makanan, kebersihan, hingga kesehatan agar kucing tetap sehat dan nyaman.
+       </p>
+       <p>
+       Dengan mempelajari kucing, kita bisa lebih menghargai hewan peliharaan dan membangun hubungan yang lebih baik antara manusia dan hewan.
+       </p>
+    </div>
+    
+    <div class="container">
+      
+      <div class="card">
+      <img src="foto2.jpg">
+      <h2>Cara merawat kucing yang benar</h2>
+      <p>
+        Pelajari bagaimana cara merawat kucing yang benar
+      </p>
+      <a href="artikel1.html">
+     <button class="neon-btn">Baca Artikel</button>
+     </a>
+      </div>
+      
+      <div class="card">
+      <img src="foto3.jpg">
+      <h3>Penelitian kebiasaan kucing</h3>
+      <p>
+        Kebiasaan kucing yang dilakukan sehari-hari selama masa musim kawin
+      </p>
+      <a href="artikel2.html">
+     <button class="neon-btn">Baca Artikel</button>
+     </a>
+    </div>
+    
+    <div class="card">
+      <img src="foto4.jpg">
+      <h4>Makanan Kucing</h4>
+      <p>
+        Makanan yang baik untuk kucing
+      </p>
+      <a href="artikel3.html">
+        <button class="neon-btn">Baca Artikel</button>
+      </a>
+    </div>
+    
+    <div class="card">
+      <img src="foto5.jpg">
+      <h4>Penyakit kucing</h4>
+      <p>
+        Macam-macam Penyakit Umum yang sering di gejala Kucing
+      </p>
+      <a href="artikel4.html">
+        <button class="neon-btn">Baca Artikel</button>
+      </a>
+    </div>
+    
+    <div class="card">
+      <img src="foto6.jpg">
+      <h4>Jenis-Jenis Kucing</h4>
+      <p>
+        Beragam Jenis Kucing yang diketahui
+      </p>
+      <a href="artikel5.html">
+        <button class="neon-btn">Baca Artikel</button>
+      </a>
+    </div>
+    
+    <div class="card">
+      <img src="foto7.jpg">
+      <h4>Bermain Dengan Kucing</h4>
+      <p>
+        Cara bermain yang benar dengan Kucing
+      </p>
+      <a href="artikel6.html">
+        <button class="neon-btn">Baca Artikel</button>
+      </a>
+    </div>
+    
+     <a href="https://wa.me/6282231530126" target="_blank">
+      <button>Order Website</button>
+     </a>
+   </div>
+    
+  </body>
+</html>
